@@ -28,6 +28,9 @@ msg_ok "Installed Dependencies"
 
 msg_info "Installing Docker & Compose"
 $STD apk add docker
+cat << EOF | tee -a /etc/docker/daemon.json
+{ "registry-mirrors" : [ "https://dockerhub.timeweb.cloud", "https://mirror.gcr.io" ] }
+EOF
 $STD rc-service docker start
 $STD rc-update add docker default
 
