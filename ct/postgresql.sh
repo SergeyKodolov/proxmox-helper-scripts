@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-source <(curl -s https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/misc/build.func)
+source <(curl -s https://raw.githubusercontent.com/SergeyKodolov/proxmox-helper-scripts/main/misc/build.func)
 # Copyright (c) 2021-2025 tteck
 # Author: tteck (tteckster)
-# License: MIT | https://github.com/community-scripts/ProxmoxVE/raw/main/LICENSE
+# License: MIT | https://github.com/SergeyKodolov/proxmox-helper-scripts/raw/main/LICENSE
 # Source: https://www.postgresql.org/
 
 APP="PostgreSQL"
